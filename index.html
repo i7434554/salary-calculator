@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연봉 상위 퍼센트 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>연봉 상위 퍼센트 계산기</h1>
+    <form id="salary-form">
+        <label for="salary">연봉을 입력하세요:</label>
+        <div style="display: flex; align-items: center;">
+            <input type="number" id="salary" name="salary" required style="flex: 1;">
+            <span>만원</span>
+        </div>
+        <button type="submit">계산</button>
+    </form>
+    <p id="result"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
