@@ -183,21 +183,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // ✅ 결과 출력 (정상적으로 출력되도록 예외 처리)
         document.getElementById('result').innerHTML = `
-        <div style="padding: 15px; border: 2px solid #000; border-radius: 10px; background-color: #f9f9f9; text-align: center; width: 80%; margin: auto;">
+        <div style="padding: 5px; border: 2px solid #000; border-radius: 10px; background-color: #f9f9f9; text-align: center; width: 80%; margin: auto;">
             
-            <div style="padding: 15px; border: 2px solid #007bff; border-radius: 10px; background-color: #eaf2ff; margin-bottom: 15px;">
+            <div style="padding: 5px; border: 2px solid #007bff; border-radius: 10px; background-color: #eaf2ff; margin-bottom: 5px;">
                 <h2 style="color: #007bff;">당신의 연봉 등급</h2>
                 <p id="animatedText" style="font-size: 1.8em; font-weight: bold; color: #ff0000;">${percentile}</p>
                 <hr style="border: 1px solid #007bff; width: 80%;">
                 <p style="font-size: 1em; color: #333;">${description}</p>
             </div>
 
-            <div style="padding: 15px; border: 2px solid #28a745; border-radius: 10px; background-color: #eaffea; margin-bottom: 15px;">
+            <div style="padding: 5px; border: 2px solid #28a745; border-radius: 10px; background-color: #eaffea; margin-bottom: 5px;">
                 <h3 style="color: #28a745;">📆 예상 월 실수령액</h3>
                 <p style="font-size: 1.5em; font-weight: bold;">${netSalaryData.monthly} 만원</p>
             </div>
 
-            <div style="padding: 15px; border: 2px solid #ff5733; border-radius: 10px; background-color: #ffe6e6; margin-bottom: 15px;">
+            <div style="padding: 5px; border: 2px solid #ff5733; border-radius: 10px; background-color: #ffe6e6; margin-bottom: 5px;">
                 <h3 style="color: #ff5733;">📉 예상 연 실수령액</h3>
                 <p style="font-size: 1.5em; font-weight: bold;">${netSalaryData.annual} 만원</p>
             </div>
