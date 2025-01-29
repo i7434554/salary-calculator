@@ -1,87 +1,126 @@
-/* 기본 스타일 초기화 */
+/* ✅ Google Fonts 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* ✅ 전체 스타일 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
-/* 전체 페이지 스타일 */
+/* ✅ 화면 전체를 감싸는 컨테이너 */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
+    min-height: 100vh;
     background-color: #f8f9fa;
+    overflow: auto; /* ✅ 스크롤 가능하도록 변경 */
+    padding: 20px; /* ✅ 여백 추가 */
 }
 
-/* 제목 스타일 */
+/* ✅ 제목 스타일 (구글 스타일) */
 h1 {
     font-size: 2em;
+    font-weight: 700;
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* 폼 스타일 */
+/* ✅ 폼 디자인 */
 form {
     background: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
     max-width: 400px;
     text-align: center;
 }
 
-/* 입력 필드 스타일 */
+/* ✅ 입력 필드 */
 input[type="number"] {
-    width: 80%;
-    padding: 10px;
-    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
     border: 1px solid #ccc;
-    border-radius: 30px;
+    border-radius: 25px;
     outline: none;
     text-align: center;
     transition: all 0.2s ease-in-out;
 }
 
-/* 입력 필드 포커스 효과 */
 input[type="number"]:focus {
     border-color: #4285f4;
-    box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+    box-shadow: 0 0 6px rgba(66, 133, 244, 0.5);
 }
 
-/* 버튼 스타일 */
+/* ✅ 버튼 스타일 (구글 버튼 스타일) */
 button {
     margin-top: 15px;
     width: 100%;
-    padding: 10px;
-    font-size: 1.1em;
+    padding: 12px;
+    font-size: 1.2em;
     font-weight: bold;
     color: white;
     background-color: #4285f4;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
 
-/* 버튼 호버 효과 */
 button:hover {
     background-color: #357ae8;
 }
 
-/* 결과 표시 스타일 */
+/* ✅ 결과 박스 */
 #result {
     margin-top: 20px;
     padding: 15px;
     font-size: 1.2em;
     color: #333;
     background: white;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
+    overflow-x: auto; /* ✅ 가로 스크롤 가능하게 */
+}
+
+/* ✅ 개별 카드 디자인 */
+.result-box {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 350px;
+    overflow-x: auto;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* ✅ 연봉 등급 (파란색 테두리) */
+.salary-rank {
+    background-color: #eaf2ff;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+/* ✅ 월 실수령액 (초록색 테두리) */
+.monthly-income {
+    background-color: #eaffea;
+    border: 2px solid #28a745;
+    color: #28a745;
+}
+
+/* ✅ 연간 실수령액 (빨간색 테두리) */
+.annual-income {
+    background-color: #ffe6e6;
+    border: 2px solid #ff5733;
+    color: #ff5733;
 }
