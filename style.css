@@ -1,45 +1,87 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 전체 페이지 스타일 */
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 폼 스타일 */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
-h1 {
-    color: #2c3e50;
-}
-
-form {
-    margin-top: 20px;
-}
-
-label {
-    font-size: 1.2em;
-}
-
-input {
-    margin: 10px 0;
+/* 입력 필드 스타일 */
+input[type="number"] {
+    width: 80%;
     padding: 10px;
     font-size: 1em;
-    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
+/* 입력 필드 포커스 효과 */
+input[type="number"]:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+}
+
+/* 버튼 스타일 */
 button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #3498db;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
     color: white;
+    background-color: #4285f4;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
+/* 버튼 호버 효과 */
 button:hover {
-    background-color: #2980b9;
+    background-color: #357ae8;
 }
 
+/* 결과 표시 스타일 */
 #result {
     margin-top: 20px;
+    padding: 15px;
     font-size: 1.2em;
-    color: #16a085;
+    color: #333;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
